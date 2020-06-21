@@ -115,3 +115,8 @@ db.customers.find().sort({age: -1});
 
 
 To conclude, I have learned the syntax of different MongoDB commands and learned how to use them inside MongoDB shell, also learned how to use different operators for MongoDB
+
+#### Express JS Crash Course
+I have some experience with using Express in my professional life, however it is nice to relearn a lot of it in the Express JS Crash Course.
+
+I learned that Express is a minimalistic, open source web framework for Node.js. It is used to build powerful web applications and APIS, the most popular framework for Node.js and uses MVC concepts.
