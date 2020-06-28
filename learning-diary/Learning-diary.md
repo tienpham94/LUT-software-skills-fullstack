@@ -235,3 +235,5 @@ To generate new component also do as follow:
 ```
 ng generate component hero-detail
 ```
+
+I learned that `[hero]="selectedHero"` is an Angular property binding. It's a one way data binding from the selectedHero property of the HeroesComponent to the hero property of the target element, which maps to the hero property of the HeroDetailComponent.
