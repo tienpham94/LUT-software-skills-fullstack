@@ -195,3 +195,28 @@ To serve the app, we go to the workspace directory and launch the application.
 cd angular-tour-of-heroes
 ng serve --open
 ```
+
+We can generate a new component by the following command 
+```
+ng generate component heroes
+```
+
+We can show a property in template by adding a property to Angular component
+```
+hero = 'Windstorm';
+
+//heroes.component.html
+{{hero}}
+```
+
+Format with the UppercasePipe: 
+```
+<h2>{{hero.name | uppercase}} Details</h2>
+```
+
+I learned about two-way binding in Angular:
+```
+<input [(ngModel)]="hero.name" placeholder="name"/>
+```
+I learned that although ngModel is a valid Angular directive, it isn't available by default.
+It belongs to the optional FormsModule and you must opt-in to using it.
