@@ -228,3 +228,10 @@ We can display list by using ngFor
 We shouldn't forget the asterisk (*) in front of ngFor. It's a critical part of the syntax.
 
 The Angular class binding makes it easy to add and remove a CSS class conditionally. Just add [class.some-css-class]="some-condition" to the element you want to style.
+
+I learned that keeping all features in one component as the application grows will not be maintainable. You'll want to split up large components into smaller sub-components, each focused on a specific task or workflow.
+
+To generate new component also do as follow:
+```
+ng generate component hero-detail
+```
