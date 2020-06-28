@@ -220,3 +220,11 @@ I learned about two-way binding in Angular:
 ```
 I learned that although ngModel is a valid Angular directive, it isn't available by default.
 It belongs to the optional FormsModule and you must opt-in to using it.
+
+We can display list by using ngFor
+```
+<li *ngFor="let hero of heroes">
+```
+We shouldn't forget the asterisk (*) in front of ngFor. It's a critical part of the syntax.
+
+The Angular class binding makes it easy to add and remove a CSS class conditionally. Just add [class.some-css-class]="some-condition" to the element you want to style.
