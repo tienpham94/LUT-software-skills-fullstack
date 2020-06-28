@@ -178,3 +178,20 @@ Then we can use interpolation with ejs
 	</ul>
 <% include partials/footer%>
 ```
+
+#### Angular
+I learned that to create an Angular project we can do the following command to create an Angular workspace
+```
+ng new angular-tour-of-heroes
+```
+It also creates the following workspace and starter project files:
+A new workspace, with a root folder named angular-tour-of-heroes.
+An initial skeleton app project, also called angular-tour-of-heroes (in the src subfolder).
+An end-to-end test project (in the e2e subfolder).
+Related configuration files.
+
+To serve the app, we go to the workspace directory and launch the application.
+```
+cd angular-tour-of-heroes
+ng serve --open
+```
