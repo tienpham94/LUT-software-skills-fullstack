@@ -160,3 +160,21 @@ app.use(logger);
 ```
 
 The order of middleware is important
+
+ejs is a powerful template engine, to use it just install it and put it in the express app.js file 
+```
+// View engine
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+```
+
+Then we can use interpolation with ejs
+```
+	<h1><%= title %></h1>
+	<ul>
+	<% users.forEach(function(user){ %>
+		<li><%= user.first_name %> <%= user.last_name %></li>
+	<% }) %>
+	</ul>
+<% include partials/footer%>
+```
