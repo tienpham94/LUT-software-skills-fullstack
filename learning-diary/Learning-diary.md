@@ -246,3 +246,9 @@ ng generate service hero
 ```
 
 I learned that using the Angular HttpClient.get method to fetch the heroes and HttpClient.get() returns an Observable.
+
+### 30.6.2020
+
+I also learned that in Angular, the best practice is to load and configure the router in a separate, top-level module that is dedicated to routing and imported by the root AppModule.
+
+I learned that a routerLink attribute is the string that the router matches to the route to component. The routerLink is the selector for the RouterLink directive that turns user clicks into router navigations. It's another of the public directives in the RouterModule.
