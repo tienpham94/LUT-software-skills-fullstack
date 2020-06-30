@@ -237,3 +237,12 @@ ng generate component hero-detail
 ```
 
 I learned that `[hero]="selectedHero"` is an Angular property binding. It's a one way data binding from the selectedHero property of the HeroesComponent to the hero property of the target element, which maps to the hero property of the HeroDetailComponent.
+
+I also learned the importance of services. Components shouldn't fetch or save data directly and they certainly shouldn't knowingly present fake data. They should focus on presenting data and delegate data access to a service.
+
+To create service we use the following command
+```
+ng generate service hero
+```
+
+I learned that using the Angular HttpClient.get method to fetch the heroes and HttpClient.get() returns an Observable.
