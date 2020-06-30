@@ -252,3 +252,26 @@ I learned that using the Angular HttpClient.get method to fetch the heroes and H
 I also learned that in Angular, the best practice is to load and configure the router in a separate, top-level module that is dedicated to routing and imported by the root AppModule.
 
 I learned that a routerLink attribute is the string that the router matches to the route to component. The routerLink is the selector for the RouterLink directive that turns user clicks into router navigations. It's another of the public directives in the RouterModule.
+
+I learned that HttpClient is Angular's mechanism for communicating with a remote server over HTTP. we can make HttpClient available everywhere in the app in two steps. First, add it to the root AppModule by importing it:
+
+```
+import { HttpClientModule }    from '@angular/common/http';
+```
+
+Next, still in the AppModule, add HttpClient to the imports array:
+
+```
+@NgModule({
+  imports: [
+    HttpClientModule,
+  ],
+})
+```
+
+In-memory Web API module is an interesting module, after installing the module, the app will make requests to and receive responses from the HttpClient without knowing that the In-memory Web API is intercepting those requests, applying them to an in-memory data store, and returning simulated responses.
+
+I learned that HttpClient methods return one value. All HttpClient methods return an RxJS Observable of something. In general, an observable can return multiple values over time. An observable from HttpClient always emits a single value and then completes, never to emit again.
+
+I learned that as a rule, an Observable does nothing until something subscribes. I also learned that a Subject is both a source of observable values and an Observable itself. we can subscribe to a Subject as we would any Observable.
+we can also push values into that Observable by calling its next(value) method as the search() method does.
