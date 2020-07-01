@@ -305,3 +305,13 @@ const query = { username: username };
 User.findOne(query, callback);
 ```
 
+I learned that passportjs has a ton of strategies, we can use passport-jwt strategy to incorporate JWT with passport
+
+I also learned that with PassportJS whenever we want to protect an Express route we can add the following to the route
+```js
+passport.authenticate('jwt', {session:false})
+
+router.get('/profile', passport.authenticate('jwt', {session:false}), (req, res, next) => {
+  res.json({user: req.user});
+});
+```
