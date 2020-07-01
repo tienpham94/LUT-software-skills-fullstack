@@ -293,3 +293,15 @@ To use a static folder in express we can do the following
 ```
 app.use(express.static(path.join(__dirname, 'public')))
 ```
+
+In mongoose, to find user by id we can do the following:
+```
+User.findById(id, callback);
+```
+
+To find user by name we can do the following:
+```
+const query = { username: username };
+User.findOne(query, callback);
+```
+
