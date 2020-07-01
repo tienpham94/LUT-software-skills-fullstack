@@ -315,3 +315,5 @@ router.get('/profile', passport.authenticate('jwt', {session:false}), (req, res,
   res.json({user: req.user});
 });
 ```
+
+I learned that we can use `angular2-flash-messages` to display messages to the user that will disappear after a certain period of time.
