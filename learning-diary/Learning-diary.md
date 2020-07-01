@@ -317,3 +317,17 @@ router.get('/profile', passport.authenticate('jwt', {session:false}), (req, res,
 ```
 
 I learned that we can use `angular2-flash-messages` to display messages to the user that will disappear after a certain period of time.
+
+To use router navigate in Angular 2 we need to import it to the file 
+```
+import { Router } from '@angular/router';
+```
+After that, we need to add it to constructor
+```
+constructor(private authService: AuthService,
+    private router: Router) { }
+```
+Then in code we can navigate with router
+```
+this.router.navigate(['/login']
+```
