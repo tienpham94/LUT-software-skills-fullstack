@@ -275,3 +275,21 @@ I learned that HttpClient methods return one value. All HttpClient methods retur
 
 I learned that as a rule, an Observable does nothing until something subscribes. I also learned that a Subject is both a source of observable values and an Observable itself. we can subscribe to a Subject as we would any Observable.
 we can also push values into that Observable by calling its next(value) method as the search() method does.
+
+#### MEAN-Stack Front To Back
+
+I learned that we can either use `cors` or the following way with express.js to enable cors
+```
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "YOUR-DOMAIN.TLD"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+```
+
+`body-parser` is a middleware that for example when we submit the form we can get data on server
+
+To use a static folder in express we can do the following 
+```
+app.use(express.static(path.join(__dirname, 'public')))
+```
