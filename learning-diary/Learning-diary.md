@@ -331,3 +331,5 @@ Then in code we can navigate with router
 ```
 this.router.navigate(['/login']
 ```
+
+I learned that on Heroku we can configure Mlab add on so that we can use MongoDB with Heroku
