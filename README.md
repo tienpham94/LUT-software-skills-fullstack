@@ -33,3 +33,8 @@ The project I made is a MEAN blog for myself, where I can post my new blogs, it 
 - Node
 - Express
 - MongoDB
+
+![image](https://user-images.githubusercontent.com/25751050/86369150-b6660400-bc86-11ea-941b-878dca15fb5a.png)
+
+![image](https://user-images.githubusercontent.com/25751050/86369224-cb429780-bc86-11ea-91e8-1f5eb54d4441.png)
+
