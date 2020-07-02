@@ -333,3 +333,15 @@ this.router.navigate(['/login']
 ```
 
 I learned that on Heroku we can configure Mlab add on so that we can use MongoDB with Heroku
+
+### 2.7.2020
+
+#### Course project
+
+While working on the course project, I had the opportunity to brush up my skills with all parts of the MEAN stack. The project is a MEAN blog for myself, where I can post my new blogs, it has an admin panel where I can edit my own blog posts, publish a post, add new posts, and routing between pages. The blog is built with the whole MEAN stack, specifically with the following technologies:
+- Angular 
+- HTML 
+- Bootstrap
+- Node
+- Express
+- MongoDB
